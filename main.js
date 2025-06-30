@@ -5,7 +5,7 @@ document.getElementById('notify-form').addEventListener('submit', function(e) {
   const formData = new FormData();
   formData.append("email", email); // "email" must match what's expected in your script
 
-  fetch("https://script.google.com/macros/s/AKfycbxWy8vnNLTDy-JPC9r385VPGg5pe37xT9xeguUr91PmZtlT2WqjiijEq9zzt5b0ByS9/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbyXbW7CglS4cgs64MbVqX9r6oJi0blpV6tvEKlOcB71NGkAPmcZPjDIUC-ap8p6zjJueg/exec", {
     method: "POST",
     body: formData
   })
