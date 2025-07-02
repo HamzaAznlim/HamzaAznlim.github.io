@@ -20,22 +20,3 @@ document.getElementById('notify-form').addEventListener('submit', function(e) {
 });
 
   
-window.addEventListener('DOMContentLoaded', () => {
-    const video = document.getElementById('hero-video');
-      video.muted = false;
-    video.play().then(() => {
-      video.addEventListener('ended', () => {
-        // ⏱️ Restart it
-        video.currentTime = 0;
-  
-        // 🔇 Mute for the loop
-        video.muted = true;
-  
-        // 🔁 Loop silently
-        video.loop = true;
-        video.play();
-      });
-    }).catch(err => {
-      console.error("Autoplay blocked:", err);
-    });
-  });
