@@ -39,6 +39,24 @@
     z-index: 5;
   }
 
+  .social-icons{
+    position: absolute;
+    bottom:  30px;
+    right: 50%;
+    z-index: 10;
+    transform: translateX(50%);
+  }
+
+  .icons{
+    display: flex;
+    gap: 30px;
+  }
+
+  .icons img{
+    width: 30px;
+    height: 30px;
+  }
+
   .content {
     scale: 1.2;
     color: white;
@@ -72,7 +90,17 @@
     width: 260px;
     border: none;
     border-radius: 5px;
+    color: #ffffff;
     font-size: 1em;
+    background: rgba(255, 255, 255, 0.34);
+    backdrop-filter: blur(10.199999809265137px);
+  }
+  input[type="email"]:focus {
+    outline: none;
+  }
+
+  input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.651);
   }
 
   button {
@@ -83,8 +111,37 @@
     color: black;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.753);
   }
 
   button:hover {
-    background-color: #ddd;
+    background-color: #f3f3f3;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .content {
+      scale: 1;
+    }
+    
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+  
+    p {
+      font-size: 1em;
+      margin-bottom: 1.5em;
+      max-width: 600px;
+      margin: 0 auto 1.5em auto;
+    }
+
+    .icons{
+      display: flex;
+      gap: 20px;
+    }
+  
+    .icons img{
+      width: 15px;
+      height: 15px;
+    }
   }
