@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Launch Page</title>
-  <link rel="stylesheet" href="./main.css" />
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Launch Page</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
     <div class="video-wrapper">
-        <video class="background-video" autoplay muted loop playsinline>
-          <source src="./assets/Without_W.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-    
-        <div class="overlay"></div>
-    
-        <div class="content">
-          <h1>Something big is coming <br /> Can you guess what it is</h1>
-          <p>Be part of the excitement: receive exclusive <br /> launch updates and notifications</p>
-          <form id="notify-form">
-            <input type="email" id="email" placeholder="Email address" required />
-            <button type="submit">Notify me</button>
-          </form>
+      <video id="hero-video" class="background-video" autoplay muted loop playsinline>
+        <source src="./assets/With_W.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>
+          You saw the W. Now  unlock what’s behind it.
+        </h1>
+        <p>
+          Be part of the excitement: receive exclusive 
+          launch updates and notifications
+        </p>
+        <form id="notify-form">
+          <input type="email" id="email" placeholder="Email address" required />
+          <button type="submit">Notify me</button>
+        </form>
+      </div>
+      <div class="social-icons">
+        <div class="icons">
+          <a href="https://web.facebook.com/wasalofficiel/?_rdc=1&_rdr#">
+            <img src="./assets/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/wasalofficial/">
+            <img src="./assets/instagram.png" alt="instagram" />
+          </a>
+          <a href="https://x.com/WasalOfficial">
+            <img src="./assets/tik-tok.png" alt="tik-tok" />
+          </a>
+          <a href="https://x.com/WasalOfficial">
+            <img src="./assets/Twitter_x.png" alt="Twitter_x" />
+          </a>
+          <a href="https://fr.pinterest.com/WasalOfficiel/">
+            <img src="./assets/pinterest.png" alt="pinterest" />
+          </a>
+          <a href="https://www.youtube.com/@WasalOfficiel">
+            <img src="./assets/youtube.png" alt="youtube" />
+          </a>
+          <a href="https://www.linkedin.com/company/wa-sal/">
+            <img src="./assets/linkedin-logo.png" alt="linkedin" />
+          </a>
         </div>
       </div>
-      <script src="./main.js"></script>
-</body>
+    </div>
+    <script src="./main.js"></script>
+  </body>
 </html>
