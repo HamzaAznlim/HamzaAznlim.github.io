@@ -10,7 +10,7 @@ document.getElementById('notify-form').addEventListener('submit', function(e) {
     body: formData
   })
   .then(() => {
-    alert("Submitted successfully!");
+    alert("Thank you ! Something big is coming your way... 👀");
     document.getElementById("notify-form").reset();
   })
   .catch(err => {
