@@ -10,7 +10,7 @@ document.getElementById('notify-form').addEventListener('submit', function(e) {
     body: formData
   })
   .then(() => {
-    alert("Thank you ! Something big is coming your way... 👀");
+    alert("You’re officially part of the movement. You’ll be among the first to unlock the meaning of W — and explore a new way to share, shop, and shine. Let the countdown begin.");
     document.getElementById("notify-form").reset();
   })
   .catch(err => {
